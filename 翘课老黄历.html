@@ -1,0 +1,270 @@
+
+<html><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>今天翘课了吗？快来测一测你的翘课指数吧！</title>
+
+
+<style>
+
+.preload {
+	background-position: 9999px 9999px;
+	width: 1px;
+	height: 1px;
+	display: none;
+}
+
+
+html, body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.miaoyu{
+	width: 70%;
+	margin: 0 auto;
+	position: relative;	
+}
+.miaoyu .my{ width: 100%;}
+
+.miaoyu .lots{
+	position: absolute;
+	bottom: -20%;
+	width: 100%;
+	height: 100%;
+	-webkit-animation: lightShake 2s infinite linear;
+	animation: lightShake 2s infinite linear;
+	top: 3%;
+	left: 1%;
+}
+
+
+
+.item {
+	width: 100%;
+	text-align: center;
+	padding-top: 20%;
+}
+
+
+
+/* lightShake */
+
+
+
+@-webkit-keyframes lightShake {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    10%,20% {
+        -webkit-transform: scale(0.9) rotate(-3deg);
+    }
+    30%,50%,70%,90% {
+        -webkit-transform: scale(1.1) rotate(3deg);
+    }
+    40%,60%,80% {
+        -webkit-transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(0);
+    }
+}
+
+@-moz-keyframes lightShake {
+    0% {
+        -moz-transform: scale(1);
+    }
+    10%,20% {
+        -moz-transform: scale(0.9) rotate(-3deg);
+    }
+    30%,50%,70%,90% {
+        -moz-transform: scale(1.1) rotate(3deg);
+    }
+    40%,60%,80% {
+        -moz-transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        -moz-transform: scale(1) rotate(0);
+    }
+}
+
+@-ms-keyframes lightShake {
+    0% {
+        -ms-transform: scale(1);
+    }
+    10%,20% {
+        -ms-transform: scale(0.9) rotate(-3deg);
+    }
+    30%,50%,70%,90% {
+        -ms-transform: scale(1.1) rotate(3deg);
+    }
+    40%,60%,80% {
+        -ms-transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        -ms-transform: scale(1) rotate(0);
+    }
+}
+
+@keyframes lightShake {
+    0% {
+        transform: scale(1);
+    }
+    10%,20% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+    30%,50%,70%,90% {
+        transform: scale(1.1) rotate(3deg);
+    }
+    40%,60%,80% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+/* continuouslyShake */
+
+@-webkit-keyframes continuouslyShake {
+    0% {
+        -webkit-transform: scale(1.2) rotate(0);
+    }
+    25% {
+        -webkit-transform: scale(1.2) rotate(-6deg);
+    }
+    75% {
+        -webkit-transform: scale(1.2) rotate(6deg);
+    }
+    100% {
+        -webkit-transform: scale(1.2) rotate(0);
+    }
+}
+
+@keyframes continuouslyShake {
+    0% {
+        transform: scale(1.2) rotate(0);
+    }
+    25% {
+        transform: scale(1.2) rotate(-6deg);
+    }
+    75% {
+        transform: scale(1.2) rotate(6deg);
+    }
+    100% {
+        transform: scale(1.2) rotate(0);
+    }
+}
+
+/* rotateOut */
+
+@-webkit-keyframes rotateIn {
+    0% {
+        -webkit-transform:scale(0) rotate(-360deg)
+    }
+    50% {
+        -webkit-transform:scale(0.5) rotate(-180deg)
+    }
+    100% {
+        -webkit-transform:scale(1) rotate(0)
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        transform:scale(0) rotate(-360deg)
+    }
+    50% {
+        transform:scale(0.5) rotate(-180deg)
+    }
+    100% {
+        transform:scale(1) rotate(0)
+    }
+}
+
+/* bounceInUp */
+
+@-webkit-keyframes bounceInUp {
+    0% {
+        opacity:0;
+        -webkit-transform:translateY(100%)
+    }
+    20% {
+        opacity:1;
+        -webkit-transform:translateY(-10%)
+    }
+    80% {
+        opacity:1;
+        -webkit-transform:translateY(5%)
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:translateY(0)
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+        opacity:0;
+        transform:translateY(100%)
+    }
+    20% {
+        opacity:1;
+        transform:translateY(-10%)
+    }
+    80% {
+        opacity:1;
+        transform:translateY(5%)
+    }
+    100% {
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body onLoad="init()" >
+	<div class="miaoyu">
+		<img class="my" alt="庙宇" src="C:/Users/win8/Desktop/翘课1.png" >
+		<img class="lots" src="签.png" alt="lots" >	</div>
+
+    <!--
+-->
+    <div style="display:none">
+<script type="text/javascript">
+		var SHAKE_THRESHOLD = 1000;   
+        var last_update = 0;  
+        var x = y = z = last_x = last_y = last_z = 0;  
+        function init() {  
+            if (window.DeviceMotionEvent) {  
+                window.addEventListener('devicemotion', deviceMotionHandler, false);  
+            } else {  
+ 
+            }  
+        }  
+        function deviceMotionHandler(eventData) {  
+            var acceleration = eventData.accelerationIncludingGravity;  
+            var curTime = new Date().getTime();  
+            if ((curTime - last_update) > 100) {  
+                var diffTime = curTime - last_update;  
+                last_update = curTime;  
+                x = acceleration.x;  
+                y = acceleration.y;  
+                z = acceleration.z;  
+                var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;  
+  
+                if (speed > SHAKE_THRESHOLD) {   
+                    start();   
+                }  
+                last_x = x;  
+                last_y = y;  
+                last_z = z;  
+            }  
+        }  
+ </script>       
+
+</body></html>
