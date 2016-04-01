@@ -19,3 +19,23 @@
 
 5. Server should be up & run, listen at 23300 port.
 
+# Folder usage
+
+.
+├── cmd
+└── server
+    ├── static
+    │   ├── css
+    │   └── images
+    │       ├── index
+    │       └── result
+    ├── templates
+    └── views
+
+| Folder | Usage |
+|+------+|+-----+|
+| cmd | Configurations for installation & building |
+| server | Main module |
+| static | Place to store static files, etc. css, images |
+| templates | The templates to be rendered by __flask__ |
+| views | V in MVC, handle HTML render |
