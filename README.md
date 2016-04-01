@@ -21,6 +21,7 @@
 
 # Folder usage
 
+```
 .
 ├── cmd
 └── server
@@ -31,11 +32,13 @@
     │       └── result
     ├── templates
     └── views
+```
+
 
 | Folder | Usage |
-|+------+|+-----+|
+|:------:|:------|
 | cmd | Configurations for installation & building |
 | server | Main module |
 | static | Place to store static files, etc. css, images |
-| templates | The templates to be rendered by __flask__ |
+| templates | The templates to be rendered by __Flask__ |
 | views | V in MVC, handle HTML render |
