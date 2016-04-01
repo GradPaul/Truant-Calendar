@@ -1,13 +1,9 @@
-# CareerDream Spider Feeder
+# Truant-Calendar
+# @copyright GradPaul
 
-master:
-	@echo "**Building spider-feeder Image..."
-	docker build -t "registry.prod.qc.careerdream.com/cd-spider-feeder-service" .
-	@echo "**Pushing to Registry server..."
-	docker push registry.prod.qc.careerdream.com/cd-spider-feeder-service
-	@echo "Done: registry.prod.qc.careerdream.com/cd-spider-feeder-service"
+all: install
 
-base:
-	@echo "**Building spider-feeder base image..."
-	docker build -t "registry.prod.qc.careerdream.com/spider-feeder-base-image" ./cmd
-	@echo "Done."
+install:
+	@echo 'Installing python dependencies'
+	@pip install -r cmd/requirements.txt
+	@echo 'Complete'
