@@ -45,59 +45,7 @@ html,body {
 	position: absolute;
 	height: 100%;
 	top: 4%;
-	left: 13%;<!DOCTYPE html>
-<!-- saved from url=(0026)file:///D:/web/result.html -->
-<html lang="Zh-ch">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
-    <title>今天翘课了吗？快来测一测你的翘课指数吧！</title>
-	<link rel="stylesheet" type="text/css" href="../static/css/result.css">	
-    <link rel="shortcut icon" href="/static/favicon.ico">
-</head>
-<body>
-<div class="date">
-	2016-04-03
-</div>
-<div class="week">
-	星期天
-</div>
-<div class="banner">
-	<img src="../static/images/result/banner001.png">
-</div>
-<div class="table-content">
-	<table>
-		<tbody>
-			<tr>
-				<td class="pros">
-					<img src="../static/images/result/pros.png">
-				</td>
-				<td class="cons">
-					<img src="../static/images/result/cons.png">
-				</td>
-			</tr>
-			<tr>
-				<td class="pros-detail">
-				<div class="pros-content">
-					<div class="title1">翘上午的课</div>
-					<div class="content1">和你一样起不来的少年不少，不去上课，大概不会有问题&gt;.&lt; </div>
-				</div>
-				</td>
-				<td class="cons-detail">
-				<div class="cons-content">
-					<div class="title2">翘公共课</div>
-					<div class="content2">公共课人多？公共课水？但是别忘了公共课常点名。</div>
-				</div>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-<div class="chance">
-	今日偶遇男/女神指数：90%
-</div>
-
-
-</body></html>
+	left: 13%;
 	right: 10%;
 }
 
