@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 5vw;
+	font-family: "Microsoft Yahei";
+	background-color: rgb(232, 216, 167);
+}
+
+html,body {
+	height: 100%;
+}
+
+.date,.week{
+	font-family: "方正舒体",Geneva, Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	position: fixed;
+	display: inline;
+	top: 9vh;
+	z-index: 3;
+	height: 12vw;
+	font-size: 1.7rem;
+	text-align: center;
+
+}
+.date{
+
+	left: 7vw;
+	width: 46vw;
+}
+.week {
+	right: 7vw;
+	width: 30vw;
+}
+
+.banner {
+	position: fixed;
+	top: 27.2vw;
+	left: 0;
+	right: 0;
+	height: 46.875vw;
+}
+
+.banner > img {
+	position: absolute;
+	height: 100%;
+	top: 4%;
+	left: 13%;<!DOCTYPE html>
+<!-- saved from url=(0026)file:///D:/web/result.html -->
+<html lang="Zh-ch">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <title>今天翘课了吗？快来测一测你的翘课指数吧！</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/result.css">	
+    <link rel="shortcut icon" href="/static/favicon.ico">
+</head>
+<body>
+<div class="date">
+	2016-04-03
+</div>
+<div class="week">
+	星期天
+</div>
+<div class="banner">
+	<img src="../static/images/result/banner001.png">
+</div>
+<div class="table-content">
+	<table>
+		<tbody>
+			<tr>
+				<td class="pros">
+					<img src="../static/images/result/pros.png">
+				</td>
+				<td class="cons">
+					<img src="../static/images/result/cons.png">
+				</td>
+			</tr>
+			<tr>
+				<td class="pros-detail">
+				<div class="pros-content">
+					<div class="title1">翘上午的课</div>
+					<div class="content1">和你一样起不来的少年不少，不去上课，大概不会有问题&gt;.&lt; </div>
+				</div>
+				</td>
+				<td class="cons-detail">
+				<div class="cons-content">
+					<div class="title2">翘公共课</div>
+					<div class="content2">公共课人多？公共课水？但是别忘了公共课常点名。</div>
+				</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="chance">
+	今日偶遇男/女神指数：90%
+</div>
+
+
+</body></html>
+	right: 10%;
+}
+
+.table-content {
+	position: fixed;
+	top: 45vh;
+	left: 5vw;
+	right: 5vw;
+	height: 46.4vh;
+	/*border: solid;*/
+}
+
+.table-content > table {
+	height: 100%;
+	border: solid;
+	z-index: 5;
+}
+
+.pros{
+	position: relative;
+	height: 10.8vh;
+	border:solid;
+	border-bottom-width: 3px;
+	border-right-width: 3px;
+	border-top: none;
+	border-left: none;
+}
+.cons {
+	position: relative;
+	height: 10.8vh;
+	border:solid;
+	border-left-width: 3px;
+	border-bottom-width: 3px;
+	border-top: none;
+	border-right: none;
+}
+
+.pros > img {
+	position: relative;
+	height: 50%;
+	left: 40%
+}
+
+.cons > img {
+	position: relative;
+	height: 50%;
+	left: 40%;
+}
+
+.pros-detail{
+	border:solid;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom: none;
+	border-left: none;
+	height: 100%;
+	width: 50%;
+	z-index: 1;
+}
+.cons-detail{
+	border:solid;
+	border-top-width: 3px;
+	border-left-width: 3px;
+	border-bottom: none;
+	border-right: none;
+	height: 100%;
+	width: 50%;
+	z-index: 1;
+}
+
+.pros-content {
+
+	margin: 0 10px 0 10px;
+	height: 30vh;
+	z-index: 1;
+}
+.title1 {
+	/*position: absolute;*/
+	top: 13.8vh;
+	font-size: 1.3rem;
+	font-weight: 900;
+	color: rgb(176,26,57);
+	/*margin: 4vh 10px 2vh 10px;*/
+	text-align: center;
+	z-index: 1;
+}
+.content1 {
+	font-family: "方正姚体",Geneva, Arial, Helvetica, sans-serif;	
+	margin: 1.5vh 2vw 0 0;
+	z-index: 1;
+	text-align: left;
+	line-height: 180%;
+
+}
+
+.cons-content {
+
+	margin: 0 10px 0 10px;
+	height: 30vh;
+	z-index: 1;
+}
+.title2 {
+	/*position: absolute;*/
+	top: 13.8vh;
+	font-size: 1.3rem;
+	font-weight: 900;
+	/*margin: 4vh 10px 2vh 10px;*/
+	text-align: center;
+	z-index: 1;
+}
+.content2 {
+	font-family: "方正姚体",Geneva, Arial, Helvetica, sans-serif;	
+	margin: 1.5vh 2vw 0 0;
+	z-index: 1;
+	text-align: left;
+	line-height: 180%;
+
+}
+.chance {
+	position: fixed;
+	font-size: 0.5;
+	font-weight: 900;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 3.3vh;
+}
