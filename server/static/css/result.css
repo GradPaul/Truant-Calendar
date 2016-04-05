@@ -19,14 +19,14 @@ html,body {
 	top: 9vh;
 	z-index: 3;
 	height: 12vw;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	text-align: center;
 
 }
 .date{
 
 	left: 7vw;
-	width: 46vw;
+	width: 56vw;
 }
 .week {
 	right: 7vw;
