@@ -132,8 +132,8 @@ html,body {
 	text-align: center;
 	z-index: 1;
 }
-.content1 {
-	font-family: "方正姚体",Geneva, Arial, Helvetica, sans-serif;	
+.content1,.content2 {
+	font-family: "方正姚体",Geneva, Arial, Helvetica, sans-serif;
 	margin: 1.5vh 2vw 0 0;
 	z-index: 1;
 	text-align: left;
@@ -156,14 +156,7 @@ html,body {
 	text-align: center;
 	z-index: 1;
 }
-.content2 {
-	font-family: "方正姚体",Geneva, Arial, Helvetica, sans-serif;	
-	margin: 1.5vh 2vw 0 0;
-	z-index: 1;
-	text-align: left;
-	line-height: 180%;
 
-}
 .chance {
 	position: fixed;
 	font-size: 0.5;

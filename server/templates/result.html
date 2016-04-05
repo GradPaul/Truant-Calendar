@@ -2,20 +2,18 @@
 <!-- saved from url=(0026)file:///D:/web/result.html -->
 <html lang="Zh-ch">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>今天翘课了吗？快来测一测你的翘课指数吧！</title>
-	<link rel="stylesheet" type="text/css" href="/static/css/result.css">	
+	<link rel="stylesheet" type="text/css" href="/static/css/result.css">
     <link rel="shortcut icon" href="/static/favicon.ico">
 </head>
 <body>
 <div class="date">
-	2016-04-03
 </div>
 <div class="week">
-	星期天
 </div>
 <div class="banner">
-	<img src="/static/images/result/banner001.png">
+	<img src="/static/images/result/banner001.jpg">
 </div>
 <div class="table-content">
 	<table>
@@ -46,8 +44,18 @@
 	</table>
 </div>
 <div class="chance">
-	今日偶遇男/女神指数：90%
+	今日偶遇男/女神指数:
 </div>
-
-
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript">
+	var datetime = new Date()
+	date=datetime.toDateString()
+	day=date.slice(4)
+	week=date.slice(0,4)
+	$(".date").append(day)
+	$(".week").append(week)
+	
+	var chance=parseInt(Math.random()*100)+"%"
+	$(".chance").append(chance)
+</script>
 </body></html>

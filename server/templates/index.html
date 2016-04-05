@@ -11,41 +11,42 @@
 </head>
 <body onLoad="init()" >
     <div class="miaoyu">
-        <img class="my" alt="庙宇" src="/static/images/index/background.png" />
+        <img class="my" alt="庙宇" src="/static/images/index/background.jpg" />
         <a href="/result">
-            <img class="lots" src="/static/images/index/sticks.png" alt="lots" />	
+            <img class="lots" src="/static/images/index/sticks.jpg" alt="lots" />
         </a>
     </div>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
     <script type="text/javascript">
-        var SHAKE_THRESHOLD = 1000;   
-        var last_update = 0;  
-        var x = y = z = last_x = last_y = last_z = 0;  
-        function init() {  
-            if (window.DeviceMotionEvent) {  
-                window.addEventListener('devicemotion', deviceMotionHandler, false);  
-            } else {  
+        var SHAKE_THRESHOLD = 1000;
+        var last_update = 0;
+        var x = y = z = last_x = last_y = last_z = 0;
+        function init() {
+            if (window.DeviceMotionEvent) {
+                window.addEventListener('devicemotion', deviceMotionHandler, false);
+            } else {
 
-            }  
-        }  
-        function deviceMotionHandler(eventData) {  
-            var acceleration = eventData.accelerationIncludingGravity;  
-            var curTime = new Date().getTime();  
-            if ((curTime - last_update) > 100) {  
-                var diffTime = curTime - last_update;  
-                last_update = curTime;  
-                x = acceleration.x;  
-                y = acceleration.y;  
-                z = acceleration.z;  
-                var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;  
+            }
+        }
+        function deviceMotionHandler(eventData) {
+            var acceleration = eventData.accelerationIncludingGravity;
+            var curTime = new Date().getTime();
+            if ((curTime - last_update) > 100) {
+                var diffTime = curTime - last_update;
+                last_update = curTime;
+                x = acceleration.x;
+                y = acceleration.y;
+                z = acceleration.z;
+                var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
 
-                if (speed > SHAKE_THRESHOLD) {   
-                    start();   
-                }  
-                last_x = x;  
-                last_y = y;  
-                last_z = z;  
-            }  
-        }  
-    </script>  
+                if (speed > SHAKE_THRESHOLD) {
+                    start();
+                }
+                last_x = x;
+                last_y = y;
+                last_z = z;
+            }
+        }
+    </script>
 </body>
 </html>
