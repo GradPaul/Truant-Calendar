@@ -18,7 +18,7 @@ html,body {
 	display: inline;
 	top: 9vh;
 	z-index: 3;
-	height: 12vw;
+	height: 7vh;
 	font-size: 1.5rem;
 	text-align: center;
 
@@ -35,18 +35,18 @@ html,body {
 
 .banner {
 	position: fixed;
-	top: 27.2vw;
+	margin: 0;
+	padding: 0;
+	top: 17vh;
 	left: 0;
 	right: 0;
-	height: 44vw;
+	height: 25.5vh;
+	text-align: center;
 }
 
 .banner > img {
-	position: absolute;
-	height: 90%;
-	top: 4%;
-	left: 13%;
-	right: 10%;
+	position: relative;
+	height: 100%;
 }
 
 .table-content {
@@ -54,7 +54,7 @@ html,body {
 	top: 46vh;
 	left: 5vw;
 	right: 5vw;
-	height: 40.4vh;
+	height: 43.4vh;
 	/*border: solid;*/
 }
 
@@ -66,7 +66,7 @@ html,body {
 
 .pros{
 	position: relative;
-	height: 10.8vh;
+	height: 10vh;
 	border:solid;
 	border-bottom-width: 3px;
 	border-right-width: 3px;
@@ -75,7 +75,7 @@ html,body {
 }
 .cons {
 	position: relative;
-	height: 10.8vh;
+	height: 10vh;
 	border:solid;
 	border-left-width: 3px;
 	border-bottom-width: 3px;
@@ -85,13 +85,13 @@ html,body {
 
 .pros > img {
 	position: relative;
-	height: 50%;
-	left: 40%
+	height: 5vh;
+	left: 40%;
 }
 
 .cons > img {
 	position: relative;
-	height: 50%;
+	height: 5vh;
 	left: 40%;
 }
 
@@ -118,7 +118,7 @@ html,body {
 
 .pros-content {
 
-	margin: 0 10px 0 10px;
+	margin: 5px 10px 0 10px;
 	height: 30vh;
 	z-index: 1;
 }
@@ -165,5 +165,5 @@ html,body {
 	left: 0;
 	right: 0;
 	margin: auto;
-	bottom: 3.3vh;
+	bottom: 4vh;
 }
