@@ -4,13 +4,6 @@ import os
 
 
 
-grad=['grad',]
-env.roledefs = {
-'grad': grad
-
-
-}
-env.user="root"
 
 
 def save():
@@ -19,9 +12,3 @@ def save():
 		local("git commit -m 'save' ")
 		local("git push")
 
-
-@roles('grad')		
-def update():
-	with cd('/date/src/Truant-Calendar'):
- 		run ("git reset --hard HEAD^")
- 		run("git pull")
