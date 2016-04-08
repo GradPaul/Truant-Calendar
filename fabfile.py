@@ -4,9 +4,12 @@ import os
 
 
 
-
-
 grad=['grad',]
+env.roledefs = {
+'grad': grad
+
+
+}
 env.user="root"
 
 
