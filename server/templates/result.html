@@ -3,9 +3,11 @@
 <html lang="Zh-ch">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>今天翘课了吗？快来测一测你的翘课指数吧！</title>
+	<!--为了防止手机浏览器缩放网页，这一句是必须的。-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>今天翘课了吗？快来测一测你的翘课指数吧！</title>
 	<link rel="stylesheet" type="text/css" href="/static/css/result.css">
-    <link rel="shortcut icon" href="/static/favicon.ico">
+  <link rel="shortcut icon" href="/static/favicon.ico">
 </head>
 <body>
 <div class="date">
@@ -16,6 +18,7 @@
 	<img src="/static/images/result/banner001.png">
 </div>
 <div class="table-content">
+	<!--Table布局有不少兼容性问题，不建议在现代浏览器上使用table布局。-->
 	<table>
 		<tbody>
 			<tr>
@@ -46,6 +49,7 @@
 <div class="chance">
 	今日偶遇男/女神指数:
 </div>
+<!--哈哈还用到了JQuery，感觉这几个前段页面不需要这么重的JS库。-->
 <script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript">
 	var datetime = new Date()
@@ -54,7 +58,7 @@
 	week=date.slice(0,4)
 	$(".date").append(day)
 	$(".week").append(week)
-	
+
 	var chance=parseInt(Math.random()*100)+"%"
 	$(".chance").append(chance)
 </script>
